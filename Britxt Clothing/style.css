@@ -583,7 +583,15 @@ display: none;
       transition: .5s;
 
   }
+  .icon {
+    flex-direction: row;
+  margin-left: 0%;
+  justify-content: center;
+  }
 
+  .icon a {
+    margin: 10px;
+  }
 
   .nav__menu.show-menu {
       display: block; /* Show menu when toggled */
@@ -685,9 +693,9 @@ font-size: 30px;
 position: absolute;
 }
 .nav__logo img{
-width: 20%;
-margin-right:  -100px;
-}
+  width: 30%;
+  margin-right:  -100px;
+  }
 .space202{
   margin-bottom: 180%;  
 }
@@ -729,4 +737,97 @@ margin-right:  -100px;
   color: #721c24;
   font-size: 15px;
   border: 1px solid #f5c6cb;
+}
+
+/*more*/
+.specialize {
+  text-align: center;
+  padding: 2rem;
+  background: #f9f9f9;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.card p {
+  color: #666;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/*icon*/
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.fo {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.icon a {
+  display: inline-block;
+  margin: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Hover effects */
+.icon a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .icon{
+
+  
+  }
+}
+.fo{
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+.icon .tt img  {
+  width: 30px;
+  height: 40px;
+  margin-right: -4px;
 }
