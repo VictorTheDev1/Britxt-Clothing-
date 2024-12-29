@@ -65,3 +65,24 @@
           });
       });
       
+      document.addEventListener('DOMContentLoaded', function () {
+        const aboutSection = document.querySelector('.about-us');
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              document.querySelector('.about-content').style.animationDelay = '0.2s';
+              document.querySelector('.about-image').style.animationDelay = '0.4s';
+            }
+          });
+        });
+    
+        observer.observe(aboutSection);
+      });
+
+      document.querySelectorAll('.about-slider').forEach((slider) => {
+        slider.addEventListener('wheel', (e) => {
+          e.preventDefault();
+          slider.scrollLeft += e.deltaY;
+        });
+      });
+      

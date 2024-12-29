@@ -59,10 +59,22 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--weight-400);
+ animation-name: myanimation;
+ animation-duration: 3s;
+ position: relative;
 }
 
 body{
   background-color: var(--body-color);
+}
+
+@keyframes myanimation{
+  from {
+    top: 100%;
+  }
+  to{
+    top: 0%;
+  }
 }
 
 h1,h2,h3,h4{
@@ -305,8 +317,17 @@ input{
   align-items: center;
   padding: 50px;
   background-color: #ffffff;
+  animation-name: ani1;
+  animation-duration: 2s;
 }
-
+@keyframes ani1{
+  from{
+    top: 100%;
+  }
+  to{
+    bottom: 0%;
+  }
+}
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -394,6 +415,17 @@ input{
 .contact-section {
   background-color: #fff;
   padding: 40px 20px;
+  animation-name: my1animation;
+  animation-duration: 2s;
+position: relative;
+}
+@keyframes my1animation{
+from {
+  top: 100%;
+}
+to{
+  top: 0%;
+}
 }
 
 /* Container to hold both form and info */
@@ -744,6 +776,17 @@ position: absolute;
   text-align: center;
   padding: 2rem;
   background: #f9f9f9;
+  animation-name: my2animation;
+  animation-duration: 2s;
+position: relative;
+}
+@keyframes my2animation{
+from {
+  top: 100%;
+}
+to{
+  top: 0%;
+}
 }
 
 .grid-container {
